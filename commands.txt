@@ -1,5 +1,5 @@
 npm init -y -w myPlugin
-npm i myPlugin
+npm i myplugin
 
 DEBUG=plugins cds watch
 cds bind objectstore -2 objstore --kind s3
