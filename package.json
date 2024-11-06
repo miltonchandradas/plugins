@@ -9,7 +9,8 @@
     "@cap-js-community/odata-v2-adapter": "^1.13.7",
     "@cap-js/attachments": "^1.1.8",
     "@sap/cds": "^8",
-    "express": "^4"
+    "express": "^4",
+    "myPlugin": "^1.0.0"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.6",
@@ -28,5 +29,8 @@
   },
   "sapux": [
     "app/suppliers"
+  ],
+  "workspaces": [
+    "myPlugin"
   ]
 }

@@ -1,0 +1,12 @@
+npm init -y -w myPlugin
+npm i myPlugin
+
+DEBUG=plugins cds watch
+cds bind objectstore -2 objstore --kind s3
+cds bind malware-scanner -2 malware
+cds watch --profile hybrid
+
+
+aws configure
+aws s3 ls s3://hcp-8cb3f29a-6ad5-4431-9653-04550ede3c2d
+aws s3 cp s3://hcp-8cb3f29a-6ad5-4431-9653-04550ede3c2d/4144dbf1-5ebe-4b42-8559-4e754cb8dbc9 C:\MyCode\test.pdf
