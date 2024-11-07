@@ -1,5 +1,14 @@
 const cds = require("@sap/cds");
 
+cds.add?.register?.(
+  "myplugin",
+  class extends cds.add.Plugin {
+    async run() {
+      console.log("More stuff...");
+    }
+  }
+);
+
 console.log("My plugin is loaded...");
 cds.once("served", () => {
   for (const srv of cds.services) {
